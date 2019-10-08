@@ -1,0 +1,172 @@
+Insert Into Hcm.[Role]
+    (
+        [Name], 
+        PresentationOrder
+    )
+    Values ('DEV'       , 100),
+           ('SQA'       , 101),
+           ('BA'        , 99 );
+           ('UX'        , 80),
+           ('BLD'       , 103),
+           ('Arch'      , 80),
+           ('Release'   , 104),
+           ('MGR'       , 200),
+           ('PO'        , 50),
+           ('PM'        , 50),
+           ('SCRUM'     , 106),
+           ('LEAN'      , 107),
+           ('S MGR'     , 201),
+           ('DIR'       , 202),
+           ('S DIR'     , 203),
+           ('Unknown'   , 0  ),
+
+
+Insert Into Hcm.Skill
+    (
+        [Name]
+    )
+    Values ('IQ-Core Client'   ),
+           ('IQ-Core Service'  ),
+           ('FP'               ),
+           ('UWP'              ),
+           ('WPF'              ),
+           ('XML'              ),
+           ('XPath'            ),
+           ('UX'               ),
+           ('Back-end'         ),
+           ('Presentation'     );
+           ('Windows Services' ),
+           ('T-SQL'            )
+
+
+
+Insert Into Hcm.Associate 
+    ([Name])
+	Values 
+          ('Aaron Schatzer'            ), -- Enterprise Application  Development
+          ('Alan Moses'                ), 
+          ('Amudhavalli Sundararajan'  ), 
+          ('Andy Mohammed'             ), 
+          ('Ben Huffman'               ), 
+          ('Chase Banna'               ), 
+          ('Chris Gee'                 ), 
+          ('Cyrus Moehl'               ), 
+          ('Fengmei Zhao'              ), 
+          ('Huseyin Yildirok'          ), 
+          ('Joel Doumitt'              ), 
+          ('Joseph Pierre'             ), 
+          ('Julie Cole'                ), 
+          ('Kiel Corwin'               ), 
+          ('Klas Campbell'             ), 
+          ('Louis Duran'               ), 
+          ('Manish Karn'               ), 
+          ('Max Subramanium'           ), 
+          ('Michael Connor'            ), 
+          ('Michael Richman'           ), 
+          ('Nathaniel Reinhart'        ), 
+          ('Nicholas Lane'             ), 
+          ('Rodrigo Villaca'           ), 
+          ('Ryan Kilkenny'             ), 
+          ('Suha Ardahan'              ), 
+          ('Tarik Mahmood'             ), 
+          ('Tiffany Wood'              ), 
+          ('Timothy Stevens'           ), 
+          ('Tom Wells'                 ), 
+          ('Vadim Svinenko'            ), 
+          ('Yan Ji'                    ), 
+          						     
+          ('Kashyap Vakharia'          ), -- Enterprise DBA Team
+          ('Matt Schouviller'          ), 
+          ('Matthew Gantz'             ), 
+          ('Neo Zhang'                 ), 
+          						     
+          ('Brian Haugen'              ), -- Application Support Team
+          ('Chris Allen'               ), 
+          ('Doug Gould'                ), 
+          ('Zachary Hiatt'             ), 
+          						     
+          ('Alexander Chow'            ), -- Enterprise SQA Team	
+          ('Bidhya Dahal'              ),  
+          ('Byron Monzon'              ),  
+          ('Emma Bosley'               ),  
+          ('Erik Hutson'               ),  
+          ('Jordan Schmidt'            ),  
+          ('Lydia Goy'                 ),  
+          ('Michael Kolitz'            ),  
+          ('Natalya Serkovich'         ),  
+          ('Patrick Tolentino'         ),  
+          ('Prashanthi Yeredla'        ),  
+          ('Rajasekhar Veeredhi'       ),  
+          ('Ravi Kumar Vandadi'        ),  
+          ('Ruth Knepell'              ),  
+          ('Sarveshwar Chandrasekaran' ),  
+          ('Sindhuja Edupuganti'       ),  
+          ('Sowmitha Tummeti'          ),  
+          ('Swathi Koganti'            ),  
+          ('Syamala Sri'               ),  
+          ('Timothy Primm'             ),   
+          ('Travis Dent'               ),  
+          
+          ('Angel Wasu'                ), -- BA Team  
+          ('JoAnna Vanderhoef'         ),   
+          ('Tracey Curry'              ),   
+          ('Tracy Nutting'             ),   
+          
+          ('Christina Malone'          ), -- PMRI List
+          ('Kathy Holley'              ),  
+          ('Vanessa Mirkovich, DVM'    ); 
+
+
+
+
+Delete From Hcm.AssociateRoleLink;
+Delete From Hcm.AssociateSkillLink;
+
+Insert Into 
+
+
+Update [Hcm].[Associate]
+Set [Hcm].[Associate].CurrentRoleID = //115 <Unknown>
+
+
+
+
+Insert Into Hcm.[Role]
+    (
+        [Name], 
+        PresentationOrder
+    )
+    Values ('DEV'       , 100),
+           ('SQA'       , 101),
+           ('BA'        , 99 ),
+           ('UX'        , 80),
+           ('BLD'       , 103),
+           ('Arch'      , 80),
+           ('Release'   , 104),
+           ('MGR'       , 200),
+           ('PO'        , 50),
+           ('PM'        , 50),
+           ('SCRUM'     , 106),
+           ('LEAN'      , 107),
+           ('S MGR'     , 201),
+           ('DIR'       , 202),
+           ('S DIR'     , 203),
+           ('Unknown'   , 0  );
+
+
+Insert Into Hcm.Skill
+    (
+        [Name]
+    )
+    Values ('IQ-Core Client'   ),
+           ('IQ-Core Service'  ),
+           ('FP'               ),
+           ('UWP'              ),
+           ('WPF'              ),
+           ('XML'              ),
+           ('XPath'            ),
+           ('UX'               ),
+           ('Back-end'         ),
+           ('Presentation'     ),
+           ('Windows Services' ),
+           ('T-SQL'            );

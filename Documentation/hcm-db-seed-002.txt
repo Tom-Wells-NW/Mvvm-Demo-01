@@ -1,0 +1,135 @@
+Insert Into Hcm.[Role]
+    (
+        [Name], 
+        PresentationOrder
+    )
+    Values ('DEV'       , 100),
+           ('SQA'       , 101),
+           ('BA'        , 99 );
+           ('UX'        , 80),
+           ('BLD'       , 103),
+           ('Arch'      , 80),
+           ('Release'   , 104),
+           ('MGR'       , 200),
+           ('PO'        , 50),
+           ('PM'        , 50),
+           ('SCRUM'     , 106),
+           ('LEAN'      , 107),
+           ('S MGR'     , 201),
+           ('DIR'       , 202),
+           ('S DIR'     , 203),
+           ('Unknown'   , 0  ),
+
+
+Insert Into Hcm.Skill
+    (
+        [Name]
+    )
+    Values ('IQ-Core Client'   ),
+           ('IQ-Core Service'  ),
+           ('FP'               ),
+           ('UWP'              ),
+           ('WPF'              ),
+           ('XML'              ),
+           ('XPath'            ),
+           ('UX'               ),
+           ('Back-end'         ),
+           ('Presentation'     );
+           ('Windows Services' ),
+           ('T-SQL'            )
+
+
+
+Insert Into Hcm.Associate 
+    ([Name])
+    Values ('Alan Turing'                   ),
+           ('Albert Einstein'               ),
+           ('Anders Jonas Ångström'         ),
+           ('André-Marie Ampère'            ),
+           ('Burton Richter'                ),
+           ('Carl Friedrich Gauss'          ),
+           ('Carl M. Bender'                ),
+           ('Carl Sagan'                    ),
+           ('Chen Ning Yang'                ),
+           ('Edward Teller'                 ),
+           ('Edwin Powell Hubble'           ),
+           ('Enrico Fermi'                  ),
+           ('Ernest Rutherford'             ),
+           ('Erwin Schrödinger'             ),
+           ('Freeman Dyson'                 ),
+           ('Georg Ohm'                     ),
+           ('Hendrik Casimir'               ),
+           ('James Prescott Joule'          ),
+           ('Jayant Narlikar'               ),
+           ('Johannes Kepler'               ),
+           ('John von Neumann'              ),
+           ('Joseph-Louis Lagrange'         ),
+           ('Karl Bechert'                  ),
+           ('Leonhard Euler'                ),
+           ('Max Planck'                    ),
+           ('Michael Faraday'               ),
+           ('Nicolás Cabrera'               ),
+           ('Pierre-Simon Laplace'          ),
+           ('Richard Feynman'               ),
+           ('Robert Oppenheimer'            ),
+           ('Sir Isaac Newton'              ),
+           ('Stanislaw Ulam'                ),
+           ('Stephen Hawking'               ),
+           ('Sudhansu Datta Majumdar'       ),
+           ('Toshihide Maskawa'             ),
+           ('William Shockley'              ),
+
+
+
+
+Delete From Hcm.AssociateRoleLink;
+Delete From Hcm.AssociateSkillLink;
+
+Insert Into 
+
+
+Update [Hcm].[Associate]
+Set [Hcm].[Associate].CurrentRoleID = //115 <Unknown>
+
+
+
+
+Insert Into Hcm.[Role]
+    (
+        [Name], 
+        PresentationOrder
+    )
+    Values ('DEV'       , 100),
+           ('SQA'       , 101),
+           ('BA'        ,  99 ),
+           ('UX'        ,  80),
+           ('BLD'       , 103),
+           ('Arch'      ,  80),
+           ('Release'   , 104),
+           ('MGR'       , 200),
+           ('PO'        ,  50),
+           ('PM'        ,  50),
+           ('SCRUM'     , 106),
+           ('LEAN'      , 107),
+           ('S MGR'     , 201),
+           ('DIR'       , 202),
+           ('S DIR'     , 203),
+           ('Unknown'   ,   0);
+
+
+Insert Into Hcm.Skill
+    (
+        [Name]
+    )
+    Values ('IQ-Core Client'   ),
+           ('IQ-Core Service'  ),
+           ('FP'               ),
+           ('UWP'              ),
+           ('WPF'              ),
+           ('XML'              ),
+           ('XPath'            ),
+           ('UX'               ),
+           ('Back-end'         ),
+           ('Presentation'     ),
+           ('Windows Services' ),
+           ('T-SQL'            );

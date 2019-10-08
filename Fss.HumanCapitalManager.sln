@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fss.HumanCapitalManager.WpfApp01", "Fss.HumanCapitalManager.WpfApp01\Fss.HumanCapitalManager.WpfApp01.csproj", "{8E7B0477-A025-490B-AF1C-3AE2AA6AE70C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fss.HumanCapitalManager.Core", "Fss.HumanCapitalManager.Core\Fss.HumanCapitalManager.Core.csproj", "{E78F6BD9-F578-4BF4-A045-2B7F3360A543}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fss.HumanCapitalManager.CoreModule", "Fss.HumanCapitalManager.CoreModule\Fss.HumanCapitalManager.CoreModule.csproj", "{C5E86549-25A0-4749-8B48-718390A4F28D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{7F4A9150-AD8D-41E1-B64D-4B31DFAE8AB7}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\hcm-db-create-001.txt = Documentation\hcm-db-create-001.txt
+		Documentation\hcm-db-seed-002.txt = Documentation\hcm-db-seed-002.txt
+		Documentation\readme.txt = Documentation\readme.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Core", "Tests.Core\Tests.Core.csproj", "{AE40E800-211E-4E17-A481-15B8236AC7EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.CoreModule", "Tests.CoreModule\Tests.CoreModule.csproj", "{84873220-A61C-49C3-AB70-F9D3865E78AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fss.HumanCapitalManager.DataService", "Fss.HumanCapitalManager.DataService\Fss.HumanCapitalManager.DataService.csproj", "{5A64F68D-B010-4EB9-9AD4-C49AFFC4C812}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fss.HumanCapitalManager.DesignDataService", "Fss.HumanCapitalManager.DesignDataService\Fss.HumanCapitalManager.DesignDataService.csproj", "{DF635B51-503E-4F2F-9E2B-D0467B124552}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Data", "Tests.Data\Tests.Data.csproj", "{D6DE64CF-6BB9-4EA1-9619-72B934FF21BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E7B0477-A025-490B-AF1C-3AE2AA6AE70C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E7B0477-A025-490B-AF1C-3AE2AA6AE70C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E7B0477-A025-490B-AF1C-3AE2AA6AE70C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E7B0477-A025-490B-AF1C-3AE2AA6AE70C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E78F6BD9-F578-4BF4-A045-2B7F3360A543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E78F6BD9-F578-4BF4-A045-2B7F3360A543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E78F6BD9-F578-4BF4-A045-2B7F3360A543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E78F6BD9-F578-4BF4-A045-2B7F3360A543}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5E86549-25A0-4749-8B48-718390A4F28D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5E86549-25A0-4749-8B48-718390A4F28D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5E86549-25A0-4749-8B48-718390A4F28D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5E86549-25A0-4749-8B48-718390A4F28D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE40E800-211E-4E17-A481-15B8236AC7EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE40E800-211E-4E17-A481-15B8236AC7EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE40E800-211E-4E17-A481-15B8236AC7EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE40E800-211E-4E17-A481-15B8236AC7EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84873220-A61C-49C3-AB70-F9D3865E78AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84873220-A61C-49C3-AB70-F9D3865E78AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84873220-A61C-49C3-AB70-F9D3865E78AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84873220-A61C-49C3-AB70-F9D3865E78AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A64F68D-B010-4EB9-9AD4-C49AFFC4C812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A64F68D-B010-4EB9-9AD4-C49AFFC4C812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A64F68D-B010-4EB9-9AD4-C49AFFC4C812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A64F68D-B010-4EB9-9AD4-C49AFFC4C812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF635B51-503E-4F2F-9E2B-D0467B124552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF635B51-503E-4F2F-9E2B-D0467B124552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF635B51-503E-4F2F-9E2B-D0467B124552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF635B51-503E-4F2F-9E2B-D0467B124552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6DE64CF-6BB9-4EA1-9619-72B934FF21BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6DE64CF-6BB9-4EA1-9619-72B934FF21BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6DE64CF-6BB9-4EA1-9619-72B934FF21BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6DE64CF-6BB9-4EA1-9619-72B934FF21BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80FC320E-C602-4D00-A0C2-6B1D94A60CA3}
+	EndGlobalSection
+EndGlobal

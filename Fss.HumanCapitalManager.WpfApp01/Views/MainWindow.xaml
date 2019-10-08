@@ -1,0 +1,94 @@
+﻿<Window x:Class="Fss.HumanCapitalManager.WpfApp01.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fss.HumanCapitalManager.WpfApp01.Views"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+        xmlns:Custom="http://www.galasoft.ch/mvvmlight" 
+        mc:Ignorable="d"
+        Title="Main Window" 
+        Height="900" 
+        Width="1800"
+        DataContext="{Binding MainViewModel, Mode=OneWay, Source={StaticResource Locator}}" 
+        FontSize="{DynamicResource DefaultAppFontSize}" 
+        FontFamily="{DynamicResource DefaultAppFontFamily}" 
+        FontWeight="{DynamicResource DefaultAppFontWeight}" 
+        Top="10" 
+        Left="10">
+
+    <Grid x:Name="rootLayout" Background="#FFBDDCEE">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="commandsLayout" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="updateAssociatesButton" Margin="20" Click="UpdateAssociatesButton_Click">
+                <ContentPresenter>
+                    <ContentPresenter.Content>
+                        <StackPanel>
+                            <TextBlock Text="Update Associates" TextWrapping="Wrap" TextAlignment="Center" Width="200" FontSize="38"/>
+                        </StackPanel>
+                    </ContentPresenter.Content>
+                </ContentPresenter>
+            </Button>
+            <Button Margin="20" Grid.Column="1">
+                <ContentPresenter>
+                    <ContentPresenter.Content>
+                        <StackPanel>
+                            <TextBlock Text="Update Roles" TextWrapping="Wrap" TextAlignment="Center" Width="200" FontSize="38"/>
+                        </StackPanel>
+                    </ContentPresenter.Content>
+                </ContentPresenter>
+            </Button>
+            <Button Margin="20" Grid.Column="2"  x:Name="updateSkillsButton" Click="UpdateSkillsButton_Click">
+                <ContentPresenter>
+                    <ContentPresenter.Content>
+                        <StackPanel>
+                            <TextBlock Text="Update Skills" TextWrapping="Wrap" TextAlignment="Center" Width="200" FontSize="38"/>
+                        </StackPanel>
+                    </ContentPresenter.Content>
+                </ContentPresenter>
+            </Button>
+            <Button Margin="20" Grid.Row="1">
+                <ContentPresenter>
+                    <ContentPresenter.Content>
+                        <StackPanel>
+                            <TextBlock Text="Print Associate Planning Cards" TextWrapping="Wrap" TextAlignment="Center" Width="200" FontSize="38"/>
+                        </StackPanel>
+                    </ContentPresenter.Content>
+                </ContentPresenter>
+            </Button>
+            <Button Margin="20" Grid.Column="1" Grid.Row="1">
+                <ContentPresenter>
+                    <ContentPresenter.Content>
+                        <StackPanel>
+                            <TextBlock Text="Reseed Test Database" TextWrapping="Wrap" TextAlignment="Center" Width="200" FontSize="38"/>
+                        </StackPanel>
+                    </ContentPresenter.Content>
+                </ContentPresenter>
+            </Button>
+            <Button Margin="20" Grid.Column="2" Grid.Row="1">
+                <ContentPresenter>
+                    <ContentPresenter.Content>
+                        <StackPanel>
+                            <TextBlock Text="Reserved Command 01" TextWrapping="Wrap" TextAlignment="Center" Width="200" FontSize="38"/>
+                        </StackPanel>
+                    </ContentPresenter.Content>
+                </ContentPresenter>
+            </Button>
+
+        </Grid>
+        <Image Margin="20" Source="D:\Code_2019\Fss.HumanCapitalManager-2018-04-07-001\Fss.HumanCapitalManager\Fss.HumanCapitalManager.WpfApp01\Images\zzz-Team-Manifesto.jpg" Stretch="UniformToFill" Opacity="0.8"/>
+
+    </Grid>
+</Window>

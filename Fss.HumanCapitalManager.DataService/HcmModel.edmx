@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HcmModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Associate">
+          <Key>
+            <PropertyRef Name="AssociateID" />
+          </Key>
+          <Property Name="AssociateID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="120" Nullable="false" />
+          <Property Name="Tenure" Type="float" />
+          <Property Name="CurrentRoleID" Type="int" />
+        </EntityType>
+        <EntityType Name="AssociateRoleLink">
+          <Key>
+            <PropertyRef Name="AssociateRoleLinkID" />
+          </Key>
+          <Property Name="AssociateRoleLinkID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AssociateID" Type="int" Nullable="false" />
+          <Property Name="RoleID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AssociateSkillLink">
+          <Key>
+            <PropertyRef Name="AssociateSkillLinkID" />
+          </Key>
+          <Property Name="AssociateSkillLinkID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AssociateID" Type="int" Nullable="false" />
+          <Property Name="SkillID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="120" Nullable="false" />
+          <Property Name="PresentationOrder" Type="int" />
+        </EntityType>
+        <EntityType Name="Skill">
+          <Key>
+            <PropertyRef Name="SkillID" />
+          </Key>
+          <Property Name="SkillID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="120" Nullable="false" />
+          <Property Name="PresentationOrder" Type="int" />
+        </EntityType>
+        <EntityType Name="Team">
+          <Key>
+            <PropertyRef Name="TeamID" />
+          </Key>
+          <Property Name="TeamID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="120" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="HcmModelStoreContainer">
+          <EntitySet Name="Associate" EntityType="Self.Associate" Schema="Hcm" store:Type="Tables" />
+          <EntitySet Name="AssociateRoleLink" EntityType="Self.AssociateRoleLink" Schema="Hcm" store:Type="Tables" />
+          <EntitySet Name="AssociateSkillLink" EntityType="Self.AssociateSkillLink" Schema="Hcm" store:Type="Tables" />
+          <EntitySet Name="Role" EntityType="Self.Role" Schema="Hcm" store:Type="Tables" />
+          <EntitySet Name="Skill" EntityType="Self.Skill" Schema="Hcm" store:Type="Tables" />
+          <EntitySet Name="Team" EntityType="Self.Team" Schema="Hcm" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HcmModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Team">
+          <Key>
+            <PropertyRef Name="TeamID" />
+          </Key>
+          <Property Name="TeamID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="HcmEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Teams" EntityType="Self.Team" />
+          <EntitySet Name="Associates" EntityType="HcmModel.Associate" />
+          <EntitySet Name="AssociateRoleLinks" EntityType="HcmModel.AssociateRoleLink" />
+          <EntitySet Name="AssociateSkillLinks" EntityType="HcmModel.AssociateSkillLink" />
+          <EntitySet Name="Roles" EntityType="HcmModel.Role" />
+          <EntitySet Name="Skills" EntityType="HcmModel.Skill" />
+          </EntityContainer>
+        <EntityType Name="Associate">
+          <Key>
+            <PropertyRef Name="AssociateID" />
+          </Key>
+          <Property Name="AssociateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="120" FixedLength="false" Unicode="true" />
+          <Property Name="Tenure" Type="Double" />
+          <Property Name="CurrentRoleID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="AssociateRoleLink">
+          <Key>
+            <PropertyRef Name="AssociateRoleLinkID" />
+          </Key>
+          <Property Name="AssociateRoleLinkID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AssociateID" Type="Int32" Nullable="false" />
+          <Property Name="RoleID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AssociateSkillLink">
+          <Key>
+            <PropertyRef Name="AssociateSkillLinkID" />
+          </Key>
+          <Property Name="AssociateSkillLinkID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AssociateID" Type="Int32" Nullable="false" />
+          <Property Name="SkillID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="120" FixedLength="false" Unicode="true" />
+          <Property Name="PresentationOrder" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Skill">
+          <Key>
+            <PropertyRef Name="SkillID" />
+          </Key>
+          <Property Name="SkillID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="120" FixedLength="false" Unicode="true" />
+          <Property Name="PresentationOrder" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HcmModelStoreContainer" CdmEntityContainer="HcmEntities">
+          <EntitySetMapping Name="Teams">
+            <EntityTypeMapping TypeName="HcmModel.Team">
+              <MappingFragment StoreEntitySet="Team">
+                <ScalarProperty Name="TeamID" ColumnName="TeamID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Associates">
+            <EntityTypeMapping TypeName="HcmModel.Associate">
+              <MappingFragment StoreEntitySet="Associate">
+                <ScalarProperty Name="CurrentRoleID" ColumnName="CurrentRoleID" />
+                <ScalarProperty Name="Tenure" ColumnName="Tenure" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="AssociateID" ColumnName="AssociateID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AssociateRoleLinks">
+            <EntityTypeMapping TypeName="HcmModel.AssociateRoleLink">
+              <MappingFragment StoreEntitySet="AssociateRoleLink">
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="AssociateID" ColumnName="AssociateID" />
+                <ScalarProperty Name="AssociateRoleLinkID" ColumnName="AssociateRoleLinkID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AssociateSkillLinks">
+            <EntityTypeMapping TypeName="HcmModel.AssociateSkillLink">
+              <MappingFragment StoreEntitySet="AssociateSkillLink">
+                <ScalarProperty Name="SkillID" ColumnName="SkillID" />
+                <ScalarProperty Name="AssociateID" ColumnName="AssociateID" />
+                <ScalarProperty Name="AssociateSkillLinkID" ColumnName="AssociateSkillLinkID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Roles">
+            <EntityTypeMapping TypeName="HcmModel.Role">
+              <MappingFragment StoreEntitySet="Role">
+                <ScalarProperty Name="PresentationOrder" ColumnName="PresentationOrder" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Skills">
+            <EntityTypeMapping TypeName="HcmModel.Skill">
+              <MappingFragment StoreEntitySet="Skill">
+                <ScalarProperty Name="PresentationOrder" ColumnName="PresentationOrder" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SkillID" ColumnName="SkillID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
