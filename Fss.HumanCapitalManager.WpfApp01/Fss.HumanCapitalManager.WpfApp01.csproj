@@ -8,11 +8,12 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Fss.HumanCapitalManager.WpfApp01</RootNamespace>
     <AssemblyName>Fss.HumanCapitalManager.WpfApp01</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -113,13 +114,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Autofac">
-      <Version>4.6.2</Version>
+      <Version>4.9.4</Version>
     </PackageReference>
     <PackageReference Include="EntityFramework">
-      <Version>6.2.0</Version>
+      <Version>6.4.0-preview1-19506-01</Version>
     </PackageReference>
     <PackageReference Include="MvvmLightLibsStd10">
-      <Version>5.4.1</Version>
+      <Version>5.4.1.1</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

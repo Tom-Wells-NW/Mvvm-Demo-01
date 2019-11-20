@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\Code_2019\Fss.HumanCapitalManager-2018-04-07-001\Fss.HumanCapitalManager\Fss.HumanCapitalManager.DataService\HcmModel.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\git\Mvvm-Demo-01\Fss.HumanCapitalManager.DataService\HcmModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
